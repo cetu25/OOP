@@ -5,7 +5,7 @@ public class Testklass {
 
     public static void main(String[] args) {
         //Praegu saab ainult ühe kontserdi ja piletimüügi luua, muidu kood ei tööta, peaks tegema
-        //vist siis alamklassi, aga ma hetkel seda veel ei oska.
+        //vist siis alamklassi, aga ma seda veel hästi ei oska.
         // Kontsert kontsert1 = new Kontsert("Päike", "Vanemuise kontserdisaal", "02-04-2020", 35, 15);
         Kontsert kontsert2 = new Kontsert("Rahu", "Viljandi Pärimusmuusika Ait", "30-04-2020", 20, 13);
         Piletimüük piletimüük2 = new Piletimüük(kontsert2, 10, 10);
