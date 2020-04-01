@@ -37,6 +37,13 @@ public class Kontsert {
         this.müüdavatePiletiteArv = müüdavatePiletiteArv;
     }
 
+    public int getPiletiHind() {
+        return piletiHind;
+    }
+
+    public void setPiletiHind(int piletiHind) {
+        this.piletiHind = piletiHind;
+    }
 
     @Override
     public String toString() {
