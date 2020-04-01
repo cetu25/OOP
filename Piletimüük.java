@@ -1,14 +1,13 @@
 public class Piletimüük {
     private Kontsert kontserdiPealkiri;
+    private int piletiHind;
     //private int soovitudPiletiteArv;
-    private int ridadeArv;
-    private int kohtadeArv;
+    //private int ridadeArv;
+    //private int kohtadeArv;
 
-    public Piletimüük(Kontsert kontserdiPealkiri, int ridadeArv, int kohtadeArv) {
+    public Piletimüük(Kontsert kontserdiPealkiri, int piletiHind) {
         this.kontserdiPealkiri = kontserdiPealkiri;
-        //this.soovitudPiletiteArv = soovitudPiletiteArv;
-        this.ridadeArv = ridadeArv;
-        this.kohtadeArv = kohtadeArv;
+        this.piletiHind = piletiHind;
     }
 
     public Kontsert getKontserdiPealkiri() {
@@ -19,19 +18,17 @@ public class Piletimüük {
         this.kontserdiPealkiri = kontserdiPealkiri;
     }
 
-    public int getRidadeArv() {
-        return ridadeArv;
+    public int getPiletiHind() {
+        return piletiHind;
     }
 
-    public void setRidadeArv(int ridadeArv) {
-        this.ridadeArv = ridadeArv;
+    public void setPiletiHind(int piletiHind) {
+        this.piletiHind = piletiHind;
     }
 
-    public int getKohtadeArv() {
-        return kohtadeArv;
+    public int piletiteMaksumus(int piletiHind, int x){
+        int summa = piletiHind *x;
+        return summa;
     }
 
-    public void setKohtadeArv(int kohtadeArv) {
-        this.kohtadeArv = kohtadeArv;
-    }
 }
